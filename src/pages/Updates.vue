@@ -1,6 +1,5 @@
 <template>
-  <div class="relative w-full h-full min-h-[calc(100vh-64px)] pb-12 overflow-hidden">
-    <div class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-br from-gray-50 via-gray-100 to-primary-50/50"></div>
+  <div class="relative w-full min-h-[calc(100vh-64px)] pb-12 bg-gradient-to-br from-gray-50 via-gray-100 to-primary-50/50">
     <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <h1 class="text-5xl font-extrabold text-gray-900 tracking-tight mb-12 text-center">Product <span class="text-primary-700">Updates</span></h1>
       <div class="space-y-8">

@@ -19,7 +19,9 @@ function handleAddTask(title: string, description: string) {
 </script>
 
 <template>
-  <div class="relative w-full h-full overflow-hidden min-h-[calc(100vh-64px)] pb-12">
+  <div
+    class="relative w-full min-h-[calc(100vh-64px)] pb-12 bg-gradient-to-br from-gray-50 via-gray-100 to-primary-50/50 overflow-hidden"
+  >
     <!-- Ambient Background Elements - Absolute to avoid spilling to footer -->
     <div
       class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-br from-gray-50 via-gray-100 to-primary-50/50"
@@ -63,7 +65,7 @@ function handleAddTask(title: string, description: string) {
           >
             Manage your work with
             <span
-              class="text-primary-500 drop-shadow-md animate-pulse shadow-[0_0_20px_theme('colors.primary.500')] inline-block rounded-md px-2"
+              class="text-primary-500 animate-pulse inline-block [text-shadow:0_0_15px_theme(colors.primary.500)] hover:[text-shadow:0_0_25px_theme(colors.primary.500),0_0_40px_theme(colors.primary.500),0_0_60px_theme(colors.primary.500)] hover:-translate-y-1 transition-all duration-300 cursor-pointer"
               >clarity</span
             >.
           </h1>
