@@ -1,6 +1,7 @@
 # 🗒️ TaskFlow — Vue.js Playground
 
 > A short dummy project built to try and test **Vue 3** concepts in a real(ish) app.
+> **Live Demo:** [FlowTask](https://flowtask-eqji.onrender.com/)
 
 ![Vue.js](https://img.shields.io/badge/Vue.js-3-42b883?style=flat-square&logo=vue.js&logoColor=white)
 ![Pinia](https://img.shields.io/badge/State-Pinia-yellow?style=flat-square&logo=pinia)
@@ -48,6 +49,14 @@ The Privacy Policy and Terms of Service pages are funny on purpose. No one reads
 ---
 
 ## 🚀 Getting Started
+
+## 🌐 Live Demo
+
+You can view the deployed application here:
+
+🔗 https://flowtask-eqji.onrender.com/
+
+or
 
 ```sh
 # Install dependencies
