@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --color-primary-50: #fcf3f3;
+  --color-primary-100: #f7e1e1;
+  --color-primary-500: #d63333;
+  --color-primary-600: #b81f1f;
+  --color-primary-700: #8b0000;
+  --color-primary-800: #6b0000;
+  --color-primary-900: #540000;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+/* Vue Transitions */
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+}
+.list-leave-active {
+  position: absolute; /* Allows smooth reflow when items are removed */
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.modal-fade-enter-from,
+.modal-fade-leave-to {
+  opacity: 0;
+}
