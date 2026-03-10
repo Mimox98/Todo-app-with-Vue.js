@@ -49,6 +49,11 @@ const router = createRouter({
       name: 'terms-of-service',
       component: () => import('../pages/TermsOfService.vue'),
     },
+    {
+      path: '/secretRoute',
+      name: 'secret-route',
+      component: () => import('../pages/SecretRoute.vue'),
+    },
   ],
   scrollBehavior() {
     return { top: 0 }

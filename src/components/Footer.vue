@@ -16,8 +16,9 @@
             TaskFlow
           </RouterLink>
           <p class="mt-4 text-gray-400 max-w-sm">
-            Elevate your personal productivity with our beautifully designed, high-performance task
-            management application.
+            Elevate your personal productivity with my beautifully designed, high-performance task
+            management application. (blah blah, more marketing copy here, but I don't want to write
+            it right now, lol)
           </p>
         </div>
 

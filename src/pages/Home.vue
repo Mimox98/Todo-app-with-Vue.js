@@ -57,10 +57,10 @@ function handleAddTask(title: string, description: string) {
             >.
           </h1>
           <p
-            class="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto drop-shadow-lg font-medium"
+            class="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-xl mx-auto drop-shadow-lg font-medium"
           >
             Stay focused, organized, and on track. Add your tasks, mark them complete, and feel the
-            productivity flow.
+            productivity flow (and then disappear again the moment you refresh the page, lol).
           </p>
         </div>
       </section>

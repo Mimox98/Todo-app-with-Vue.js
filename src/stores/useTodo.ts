@@ -29,7 +29,15 @@ export const useTodoStore = defineStore('todo', () => {
       description: 'Style the app using Tailwind CSS',
       done: false,
     },
+    {
+      id: 99,
+      title: 'Get a life',
+      description: 'This task is completely optional',
+      done: false,
+    },
   ])
+
+  const getLifeConfirmed = ref(false)
 
   const openTasks = computed(() => tasks.value.filter((t) => !t.done))
   const completedTasks = computed(() => tasks.value.filter((t) => t.done))
@@ -47,5 +55,18 @@ export const useTodoStore = defineStore('todo', () => {
     if (task) task.done = true
   }
 
-  return { tasks, openTasks, completedTasks, addTask, deleteTask, markAsDone }
+  const confirmLife = () => {
+    getLifeConfirmed.value = true
+  }
+
+  return {
+    tasks,
+    openTasks,
+    completedTasks,
+    addTask,
+    deleteTask,
+    markAsDone,
+    getLifeConfirmed,
+    confirmLife,
+  }
 })
