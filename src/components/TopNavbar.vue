@@ -1,6 +1,10 @@
 <script setup lang="ts">
 const links = [
   { label: 'Home', href: '/' },
+  { label: 'Features', href: '/features' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Updates', href: '/updates' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
@@ -10,8 +14,8 @@ const links = [
   <nav class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <a
-          href="/"
+        <router-link
+          to="/"
           class="text-2xl font-extrabold text-gray-900 tracking-tight flex items-center gap-2 hover:opacity-90 transition-opacity"
         >
           <span
@@ -19,16 +23,17 @@ const links = [
             >T</span
           >
           TaskFlow
-        </a>
+        </router-link>
 
         <ul class="hidden md:flex gap-8">
           <li v-for="link in links" :key="link.href">
-            <a
-              :href="link.href"
+            <router-link
+              :to="link.href"
               class="text-sm font-medium text-gray-600 hover:text-primary-700 transition-colors"
+              active-class="text-primary-700 font-bold"
             >
               {{ link.label }}
-            </a>
+            </router-link>
           </li>
         </ul>
 
