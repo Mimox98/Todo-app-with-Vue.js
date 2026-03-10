@@ -1,48 +1,79 @@
-# vue-test-project1
+# 🗒️ TaskFlow — Vue.js Playground
 
-This template should help get you started developing with Vue 3 in Vite.
+> A short dummy project built to try and test **Vue 3** concepts in a real(ish) app.
 
-## Recommended IDE Setup
+![Vue.js](https://img.shields.io/badge/Vue.js-3-42b883?style=flat-square&logo=vue.js&logoColor=white)
+![Pinia](https://img.shields.io/badge/State-Pinia-yellow?style=flat-square&logo=pinia)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat-square&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38bdf8?style=flat-square&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646cff?style=flat-square&logo=vite&logoColor=white)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 🎯 What Is This?
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+This is a personal learning project to experiment with Vue.js and get hands-on with:
 
-## Type Support for `.vue` Imports in TS
+- **Composition API** — `ref`, `computed`, `setup`, etc.
+- **Vue Router** — client-side routing between pages
+- **Pinia** — global state management (the cool new one, not Vuex)
+- **Single File Components (SFCs)** — keeping template, script, and styles together like civilized people
+- **TypeScript** — because `any` is a cry for help
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+![learning gif](https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif)
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ✅ What Actually Works
 
-## Project Setup
+The **only real, functioning part** of this app is the **task manager on the Home page**. You can:
+
+- ➕ Add tasks (with a title and description)
+- ✅ Mark tasks as complete
+- 🗑️ Delete tasks
+- 👁️ Switch between To-Do and Completed views
+
+Everything is stored in a **Pinia store** and lives entirely in memory — refresh the page and it's all gone. Very zen. Very impermanent. Very "we didn't implement persistence yet."
+
+---
+
+## 🤖 Everything Else
+
+All the other pages (About, Blog, Features, Pricing, Updates, Contact, Privacy Policy, Terms of Service) were **AI-generated** to fill out the app and make it look like a real SaaS product. They don't do anything. The buttons say "Coming Soon." The forms don't submit. The blog posts are fake.
+
+The Privacy Policy and Terms of Service pages are funny on purpose. No one reads those anyway.
+
+![shrug gif](https://media.giphy.com/media/3o7527pa7qs9kCG78A/giphy.gif)
+
+---
+
+## 🚀 Getting Started
 
 ```sh
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Run dev server
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
+# Type-check & build for production
 npm run build
-```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+# Lint
 npm run lint
 ```
+
+---
+
+## 🧰 Tech Stack
+
+| Tool            | Purpose                 |
+| --------------- | ----------------------- |
+| Vue 3           | UI framework            |
+| Vite            | Build tool & dev server |
+| TypeScript      | Type safety             |
+| Pinia           | Global state management |
+| Vue Router      | Client-side routing     |
+| Tailwind CSS v4 | Styling                 |
+
+---

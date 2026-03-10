@@ -39,6 +39,16 @@ const router = createRouter({
       name: 'updates',
       component: () => import('../pages/Updates.vue'),
     },
+    {
+      path: '/privacy-policy',
+      name: 'privacy-policy',
+      component: () => import('../pages/PrivacyPolicy.vue'),
+    },
+    {
+      path: '/terms-of-service',
+      name: 'terms-of-service',
+      component: () => import('../pages/TermsOfService.vue'),
+    },
   ],
   scrollBehavior() {
     return { top: 0 }

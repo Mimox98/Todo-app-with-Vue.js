@@ -67,8 +67,14 @@
           &copy; {{ new Date().getFullYear() }} TaskFlow, Inc. All rights reserved.
         </p>
         <div class="flex gap-6">
-          <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" class="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+          <RouterLink to="/privacy-policy" class="text-gray-500 hover:text-white transition-colors"
+            >Privacy Policy</RouterLink
+          >
+          <RouterLink
+            to="/terms-of-service"
+            class="text-gray-500 hover:text-white transition-colors"
+            >Terms of Service</RouterLink
+          >
         </div>
       </div>
     </div>
