@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="relative w-full min-h-[calc(100vh-64px)] pb-12 bg-gradient-to-br from-gray-50 via-gray-100 to-primary-50/50"
-  >
-    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+  <div class="w-full min-h-[calc(100vh-64px)] pb-12 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <div class="text-center mb-16">
         <h1 class="text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
           Simple, Transparent <span class="text-primary-700">Pricing</span>

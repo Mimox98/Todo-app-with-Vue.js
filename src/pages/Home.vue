@@ -19,21 +19,8 @@ function handleAddTask(title: string, description: string) {
 </script>
 
 <template>
-  <div
-    class="relative w-full min-h-[calc(100vh-64px)] pb-12 bg-gradient-to-br from-gray-50 via-gray-100 to-primary-50/50 overflow-hidden"
-  >
-    <!-- Ambient Background Elements - Absolute to avoid spilling to footer -->
-    <div
-      class="absolute inset-0 pointer-events-none z-0 bg-gradient-to-br from-gray-50 via-gray-100 to-primary-50/50"
-    ></div>
-    <div
-      class="absolute top-20 left-0 w-96 h-96 bg-primary-200/20 rounded-full blur-3xl pointer-events-none z-0 transform -translate-x-1/2"
-    ></div>
-    <div
-      class="absolute bottom-0 right-1/4 w-[35rem] h-[35rem] bg-gray-300/30 rounded-full blur-3xl pointer-events-none z-0 transform translate-y-1/4"
-    ></div>
-
-    <div class="relative z-10">
+  <div class="w-full min-h-[calc(100vh-64px)] pb-12 bg-gray-50">
+    <div>
       <!-- Hero Section -->
       <section class="relative overflow-hidden bg-gray-900 shadow-lg">
         <!-- Background Looping Video -->

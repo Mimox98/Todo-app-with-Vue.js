@@ -5,13 +5,16 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="col-span-1 md:col-span-2">
-          <a href="/" class="text-2xl font-bold text-white tracking-tight flex items-center gap-2">
+          <RouterLink
+            to="/"
+            class="text-2xl font-bold text-white tracking-tight flex items-center gap-2"
+          >
             <span
               class="w-8 h-8 rounded bg-primary-700 flex items-center justify-center text-white text-sm"
               >T</span
             >
             TaskFlow
-          </a>
+          </RouterLink>
           <p class="mt-4 text-gray-400 max-w-sm">
             Elevate your personal productivity with our beautifully designed, high-performance task
             management application.
@@ -21,18 +24,38 @@
         <div>
           <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">Product</h3>
           <ul class="space-y-3">
-            <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Updates</a></li>
+            <li>
+              <RouterLink to="/features" class="hover:text-white transition-colors"
+                >Features</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink to="/pricing" class="hover:text-white transition-colors"
+                >Pricing</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink to="/updates" class="hover:text-white transition-colors"
+                >Updates</RouterLink
+              >
+            </li>
           </ul>
         </div>
 
         <div>
           <h3 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">Company</h3>
           <ul class="space-y-3">
-            <li><a href="#" class="hover:text-white transition-colors">About</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+            <li>
+              <RouterLink to="/about" class="hover:text-white transition-colors">About</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/blog" class="hover:text-white transition-colors">Blog</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/contact" class="hover:text-white transition-colors"
+                >Contact</RouterLink
+              >
+            </li>
           </ul>
         </div>
       </div>
